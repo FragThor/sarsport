@@ -289,6 +289,38 @@
             </form>
           </div>
         </div>
+      </div><div id="signModal" class="modal fade">
+        <div class="modal-dialog modal-login">
+          <div class="modal-content">
+            <form action="/examples/actions/confirmation.php" method="post">
+              <div class="modal-header">
+                <h4 class="modal-title">Inscription</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              </div>
+
+
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="exampleFormControlInput1" class="form-label">Username</label>
+                  <input type="email" class="form-control" id="signName"
+                    placeholder="Your account name">
+                </div>
+                <div class="form-group">
+
+                  <label for="inputPassword5" class="form-label">Password</label>
+                  <input type="password" id="signPass" class="form-control" aria-describedby="passwordHelpBlock">
+                  <div id="passwordHelpBlock" class="form-text text-muted">
+                  </div>
+
+                </div>
+              </div>
+              <div class="modal-footer justify-content-between">
+                <label class="form-check-label"><input type="checkbox"> Se souvenir de moi</label>
+                <input type="submit" class="btn btn-primary" value="Login">
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
         <script>
           var myInput = document.getElementById("psw");
