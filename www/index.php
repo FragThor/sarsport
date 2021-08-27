@@ -4,6 +4,7 @@
 
 ?>
 <?php include('Header.php'); ?>
+<?php include('insciption.php'); ?>
 
 <!DOCTYPE html>
 <html lang="fr">
