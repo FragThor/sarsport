@@ -4,7 +4,7 @@
 
 ?>
 <?php include('Header.php'); ?>
-<?php include('insciption.php'); ?>
+<?php include('inscription.php'); ?>
 
 <!DOCTYPE html>
 <html lang="fr">
