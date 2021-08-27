@@ -87,6 +87,9 @@
                   <li class="nav-item">
                     <a href="#loginModal" class="nav-link blanc" data-toggle="modal">Login</a>
                   </li>
+                  <li class="nav-item">
+                    <a href="#loginModal" class="nav-link blanc" data-toggle="modal">Sign up</a>
+                  </li>
 
                   <li class="nav-item">
                     <a href="#newPageModal" class="nav-link blanc" data-toggle="modal">Créer une page</a>

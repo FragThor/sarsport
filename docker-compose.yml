@@ -5,12 +5,12 @@ services:
   webserver:
     # Use custom image based on php-apache official image
     image: php:7.4-apache
-    container_name: php_projet
+    container_name: php_projet2
     # Run the services as the same user as the host's one, or as user with uid 1000
     user: "${UID:-1001}:${UID:-1001}"
     # Expose HTTP/S ports
     ports:
-      - "8301:80"
+      - "8302:80"
     working_dir: /var/www/html # chemin virtuel pointant vers le container déployé
     volumes: 
       # Served files
