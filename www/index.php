@@ -1,3 +1,8 @@
+<?php
+                  session_start();
+                  var_dump($_SESSION);
+
+?>
 <?php include('Header.php'); ?>
 
 <!DOCTYPE html>
@@ -254,7 +259,7 @@
       <div id="loginModal" class="modal fade">
         <div class="modal-dialog modal-login">
           <div class="modal-content">
-            <form action="/examples/actions/confirmation.php" method="post">
+            <form action="./formValidation.php" method="post">
               <div class="modal-header">
                 <h4 class="modal-title">Connection</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -264,7 +269,7 @@
               <div class="modal-body">
                 <div class="form-group">
                   <label for="exampleFormControlInput1" class="form-label">email</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1"
+                  <input type="email" class="form-control" id="exampleFormControlInput1" name="exampleFormControlInput1"
                     placeholder="yourname@yourdomain.com">
                 </div>
                 <div class="form-group">
@@ -274,7 +279,7 @@
                   </div>
 
                   <label for="inputPassword5" class="form-label">Password</label>
-                  <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                  <input type="password" id="inputPassword5" name="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
                   <div id="passwordHelpBlock" class="form-text text-muted">
                     Votre mot de passe doit contenir au moins, une lettre majuscule, une lettre minuscule et au moins un
                     caractère spécial.
@@ -289,7 +294,9 @@
             </form>
           </div>
         </div>
-      </div><div id="signModal" class="modal fade">
+      </div>
+      
+      <div id="signModal" class="modal fade">
         <div class="modal-dialog modal-login">
           <div class="modal-content">
             <form action="/examples/actions/confirmation.php" method="post">

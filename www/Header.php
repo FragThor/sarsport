@@ -1,4 +1,5 @@
- <!-- Entête avec le logo de la page-->
+
+  <!-- Entête avec le logo de la page-->
  <header id="header">
         <div class="container">
 
@@ -84,9 +85,19 @@
                   <li class="nav-item">
                     <a href="#contactModal" class="nav-link blanc" data-toggle="modal">Contact</a>
                   </li>
-                  <li class="nav-item">
-                    <a href="#loginModal" class="nav-link blanc" data-toggle="modal">Login</a>
-                  </li>
+                  <?php
+                    if ($_SESSION["logged"] == "yes") {
+                      echo '
+                      <li class="nav-item">
+                      <a href="#loginModal" class="nav-link blanc" data-toggle="modal">Logout</a>
+                      </li>';
+                    } else {
+                      echo '
+                      <li class="nav-item">
+                        <a href="#loginModal" class="nav-link blanc" data-toggle="modal">Login</a>
+                      </li>';
+                    }
+                  ?>
                   <li class="nav-item">
                     <a href="#signModal" class="nav-link blanc" data-toggle="modal">Sign up</a>
                   </li>
